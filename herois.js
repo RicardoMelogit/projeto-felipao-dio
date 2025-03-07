@@ -120,22 +120,22 @@ if(artigoHeroi[4] == "Feminino"){
 
 
 console.log(artigoHeroiN, "X-Men", nomeENivelDoHeroi[0] + 
-    ", está no nível " + nomeENivelDoHeroi[4])
+    ", está no nível " + nomeENivelDoHeroi[4] + ".")
 
 console.log(artigoHeroiS, "X-Men", sexoDoHeroi[0] + 
-    ", é do sexo " + sexoDoHeroi[1])
+    ", é do sexo " + sexoDoHeroi[1]+ ".")
 
 console.log(artigoHeroiI, "X-Men", idadeDoHeroi[0] + 
-    ", tem", idadeDoHeroi[2] + " anos")
+    ", tem", idadeDoHeroi[2] + " anos.")
 
 console.log(artigoHeroiX, "X-Men", xpDoHeroi[0] + 
-    ", tem", xpDoHeroi[3] + " pontos de XP")
+    ", tem", xpDoHeroi[3] + " pontos de XP.")
 
 console.log(artigoHeroiT, "X=Men", heróiT[0] +
      ", é do sexo " + heróiT[1]
      + ", tem ", heróiT[2] + " anos" + 
      ", tem", heróiT[3] + " pontos de XP" + 
-     ", está no nível " + heróiT[4])
+     ", está no nível " + heróiT[4] + ".")
 console.log("****************************************************")
 console.log("ESSE SÃO OS X-MEN")
 console.log("*****************************************************")
