@@ -41,34 +41,37 @@ let xMen =""
 for(let i = 0; i < timeXMem.length; i++){
     xMen = timeXMem[0+i]
     if((xMen[3] >= 1) && (xMen[3] <= 1000)){
-    xMen[4] = nivel[0]
-    console.log(xMen)}
-        else if((xMen[3] >= 1001) && (xMen[3] <= 2000)){
+        xMen[4] = nivel[0]
+        console.log(xMen)
+    }else if((xMen[3] >= 1001) && (xMen[3] <= 2000)){
         xMen[4]= nivel[1]
         console.log(xMen)
-        }else if((xMen[3] >= 2001) && (xMen[3] <= 5000)){
+
+    }else if((xMen[3] >= 2001) && (xMen[3] <= 5000)){
         xMen[4]= nivel[2]
         console.log(xMen)
-        }else if(
-        (xMen[3] >= 5001) && (xMen[3] <= 7000)){
+    
+    }else if((xMen[3] >= 5001) && (xMen[3] <= 7000)){
         xMen[4]= nivel[3]
         console.log(xMen)
-        }else if(
-        (xMen[3] >= 7001) && (xMen[3] <= 8000)){
+    
+    }else if((xMen[3] >= 7001) && (xMen[3] <= 8000)){
         xMen[4]= nivel[4]
         console.log(xMen)
-        }else if(
-        (xMen[3] >= 8001) && (xMen[3] <= 9000)){
+    
+    }else if((xMen[3] >= 8001) && (xMen[3] <= 9000)){
         xMen[4]= nivel[5]
         console.log(xMen)
-        }else if(
-        (xMen[3] >= 9001) && (xMen[3] <= 10000)){
+    
+    }else if((xMen[3] >= 9001) && (xMen[3] <= 10000)){
         xMen[4]= nivel[6]
         console.log(xMen)
-        }else if((xMen[3] >= 9001) && (xMen[3] <= 50000)){
+    
+    }else if((xMen[3] >= 9001) && (xMen[3] <= 50000)){
         xMen[4]= nivel[7]
         console.log(xMen)
-        }else{}}
+    }else{}
+}
 
 //Essa apenas separa as informações.
 console.log("****************************************************")
@@ -80,7 +83,7 @@ console.log("****************************************************")
 //Para escolher a idade do herói, basta digitar o nome do herói na variável idadeDoHeroi.  
 //Para escolher a quantidade de pontos de XP do herói, basta digitar o nome do herói na variável xpDoHeroi.
 let nomeENivelDoHeroi = jeanGrey
-let sexoDoHeroi = jubileu 
+let sexoDoHeroi = gambit
 let idadeDoHeroi = ciclope
 let xpDoHeroi = tempestade
 let heróiT = fera
@@ -94,25 +97,30 @@ let artigoHeroiT = ""
 
 //Esse bloco de código verifica o sexo do herói e atribui um artigo de acordo com o sexo do herói.
 let artigoHeroi = [nomeENivelDoHeroi[1], sexoDoHeroi[1], idadeDoHeroi[1], xpDoHeroi[1], heróiT[1]]
+
 if(artigoHeroi[0] == "Feminino"){
-artigoHeroiN = "A"}
-else{
-    artigoHeroiN = "O"
+    artigoHeroiN = "A"
+    }else{artigoHeroiN = "O"
+}
+
+if(artigoHeroi[1] == "Feminino"){
+    artigoHeroiS = "A"
+    }else{artigoHeroiS = "O"
 }
 
 if(artigoHeroi[2] == "Feminino"){
     artigoHeroiI = "A"
-}else{artigoHeroiI = "O"
+    }else{artigoHeroiI = "O"
 }
 
 if(artigoHeroi[3] == "Feminino"){
-    artigoHeroiX = "A"}
-    else{artigoHeroiX = "O"
+    artigoHeroiX = "A"
+    }else{artigoHeroiX = "O"
 }
 
 if(artigoHeroi[4] == "Feminino"){
-    artigoHeroiT = "A"}
-    else{artigoHeroiT = "O"
+    artigoHeroiT = "A"
+    }else{artigoHeroiT = "O"
 }
 
 
@@ -120,22 +128,31 @@ if(artigoHeroi[4] == "Feminino"){
 
 
 console.log(artigoHeroiN, "X-Men", nomeENivelDoHeroi[0] + 
-    ", está no nível " + nomeENivelDoHeroi[4] + ".")
+    ", está no nível " + nomeENivelDoHeroi[4] + "."
+)
 
 console.log(artigoHeroiS, "X-Men", sexoDoHeroi[0] + 
-    ", é do sexo " + sexoDoHeroi[1]+ ".")
+    ", é do sexo " + sexoDoHeroi[1]+ "."
+)
 
 console.log(artigoHeroiI, "X-Men", idadeDoHeroi[0] + 
-    ", tem", idadeDoHeroi[2] + " anos.")
+    ", tem", idadeDoHeroi[2] + " anos."
+)
 
 console.log(artigoHeroiX, "X-Men", xpDoHeroi[0] + 
-    ", tem", xpDoHeroi[3] + " pontos de XP.")
+    ", tem", xpDoHeroi[3] + " pontos de XP."
+)
 
 console.log(artigoHeroiT, "X=Men", heróiT[0] +
-     ", é do sexo " + heróiT[1]
-     + ", tem ", heróiT[2] + " anos" + 
+     ", é do sexo " + heróiT[1]+ 
+     ", tem ", heróiT[2] + " anos" + 
      ", tem", heróiT[3] + " pontos de XP" + 
-     ", está no nível " + heróiT[4] + ".")
+     ", está no nível " + heróiT[4] + "."
+)
+    
+    
 console.log("****************************************************")
+
 console.log("ESSE SÃO OS X-MEN")
+
 console.log("*****************************************************")
