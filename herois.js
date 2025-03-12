@@ -8,25 +8,22 @@
 // o nome, sexo, idade e xp de cada herói.
 
 //No código abaixo são criadas variáveis para armazenar os dados de cada herói.
-let nome = ["Wolverine", "Tempestade", "Vampira", "Jubileu", "Jean Grey", "Ciclope", "Gambit", "Fera", "Professor Xavier"]
-let sexo = ["Masculino", "Feminino"]
-let idade = [120, 35, 25, 15, 32, 34, 30, 37, 60 ]
-let xp = [9350, 8562, 7568, 952, 20000, 8555, 6580, 4500, 11000]
+
 let nivel = ["Ferro", "Bronze", "Prata", "Ouro", "Platina", "Ascendente", "Imortal", "Radiante"]
 let vazio = "verificar"
 
 //Aqui cada herói e suas informações são armazenadas em uma variável.
-let wolverine  = [nome[0], sexo[0], idade[0], xp[0], vazio]
-let tempestade = [nome[1], sexo[1], idade[1], xp[1], vazio]
-let vampira    = [nome[2], sexo[1], idade[2], xp[2], vazio]
-let jubileu    = [nome[3], sexo[1], idade[3], xp[3], vazio]
-let fera       = [nome[7], sexo[0], idade[7], xp[6], vazio]
-let jeanGrey   = [nome[4], sexo[1], idade[4], xp[4], vazio]
-let ciclope    = [nome[5], sexo[0], idade[5], xp[5], vazio]
-let gambit     = [nome[6], sexo[0], idade[6], xp[7], vazio]
-let professorX = [nome[8], sexo[0], idade[8], xp[8], vazio]
+let wolverine  = ["Wolverine ", "Masculino", 120,  9350, vazio]
+let tempestade = ["Tempestade", "Feminino" ,  35,  8562, vazio]
+let vampira    = ["Vampira "  , "Feminino" ,  25,  7568, vazio]
+let jubileu    = ["Jubileu"   , "Feminino" ,  15,   952, vazio]
+let fera       = ["Fera"      , "Masculino",  37,  6580, vazio]
+let jeanGrey   = ["JeanGrey"  , "Feminino" ,  32, 20000, vazio]
+let ciclope    = ["Ciclope"   , "Masculino",  34,  8555, vazio]
+let gambit     = ["Gambit"    , "Masculino",  30,  4500, vazio]
+let professorX = ["ProfessorX", "Masculino",  60, 11000, vazio]
 
-//Aqui os heróis são armazenados em um array.
+//Aqui os heróis são armazenados todos os herois.
 let timeXMem =[wolverine, tempestade, vampira, jubileu, fera, jeanGrey, ciclope, gambit, professorX]
 
 //Aqui é criada uma variável para armazenar 
@@ -42,34 +39,34 @@ for(let i = 0; i < timeXMem.length; i++){
     xMen = timeXMem[0+i]
     if((xMen[3] >= 1) && (xMen[3] <= 1000)){
         xMen[4] = nivel[0]
-        console.log(xMen)
+        
     }else if((xMen[3] >= 1001) && (xMen[3] <= 2000)){
         xMen[4]= nivel[1]
-        console.log(xMen)
+        
 
     }else if((xMen[3] >= 2001) && (xMen[3] <= 5000)){
         xMen[4]= nivel[2]
-        console.log(xMen)
+        
     
     }else if((xMen[3] >= 5001) && (xMen[3] <= 7000)){
         xMen[4]= nivel[3]
-        console.log(xMen)
+        
     
     }else if((xMen[3] >= 7001) && (xMen[3] <= 8000)){
         xMen[4]= nivel[4]
-        console.log(xMen)
+        
     
     }else if((xMen[3] >= 8001) && (xMen[3] <= 9000)){
         xMen[4]= nivel[5]
-        console.log(xMen)
+        
     
     }else if((xMen[3] >= 9001) && (xMen[3] <= 10000)){
         xMen[4]= nivel[6]
-        console.log(xMen)
+        
     
     }else if((xMen[3] >= 9001) && (xMen[3] <= 50000)){
         xMen[4]= nivel[7]
-        console.log(xMen)
+        
     }else{}
 }
 
@@ -126,7 +123,7 @@ if(artigoHeroi[4] == "Feminino"){
 
 
 
-
+//Aqui são criadas as mensagens que apareceram na tela
 console.log(artigoHeroiN, "X-Men", nomeENivelDoHeroi[0] + 
     ", está no nível " + nomeENivelDoHeroi[4] + "."
 )
@@ -143,12 +140,8 @@ console.log(artigoHeroiX, "X-Men", xpDoHeroi[0] +
     ", tem", xpDoHeroi[3] + " pontos de XP."
 )
 
-console.log(artigoHeroiT, "X=Men", heróiT[0] +
-     ", é do sexo " + heróiT[1]+ 
-     ", tem ", heróiT[2] + " anos" + 
-     ", tem", heróiT[3] + " pontos de XP" + 
-     ", está no nível " + heróiT[4] + "."
-)
+console.log(artigoHeroiT, "X-Men " + heróiT[0] + ", é do sexo " + heróiT[1] + ", está com", 
+heróiT[2] + " anos, \ntem", heróiT[3] + " pontos de XP e está no nível " + heróiT[4] + ".")
     
     
 console.log("****************************************************")
