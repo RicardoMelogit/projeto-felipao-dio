@@ -42,7 +42,7 @@ function calculatingLMatches(playerLosers){
 
 //laço criado para calcular as derrotas de todos os jogadores
 for(let i = 0; i < allPlayers.length; i++){
-    let player = allPlayers[0+i]
+    let player = allPlayers[i]
     calculatingLMatches(player)
 }
 
@@ -54,7 +54,7 @@ function calculingWin_defeat(winR){
 
 //Laço criado para calcular o número de vitórias menos derrotas de cada jogador
 for(let i = 0; i < allPlayers.length; i++){
-    let player = allPlayers[0+i]
+    let player = allPlayers[i]
     calculingWin_defeat(player)
 }
 
@@ -73,7 +73,7 @@ function calculatingRanking(minimumWins, maximumwins, n){
 //O laço abaixo verifiva as vitórias e 
 // atribui um titulo a cada jogador
 for(let i = 0; i < allPlayers.length; i++){
-    playerR = allPlayers[0+i]
+    playerR = allPlayers[i]
     calculatingRanking(0, 10, 0)
     calculatingRanking(11, 20, 1)
     calculatingRanking(21, 50, 2)
@@ -82,7 +82,6 @@ for(let i = 0; i < allPlayers.length; i++){
     calculatingRanking(91, 100, 5)
     calculatingRanking(101, 1000000,6)
 }
-
 //Aqui você digita o mome do jogador 
 //e uma frase será exibida com as 
 // informações do jogador 
