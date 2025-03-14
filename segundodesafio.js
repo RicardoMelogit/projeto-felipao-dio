@@ -30,14 +30,10 @@ let julio   = ["Julio"  , 2725, 1240, 330, defeats, wins_defeats, classification
 //Variavel que armazena todos os players
 let allPlayers = [ricardo, leandro, mariana, paulo, aline, felipe, thalita, julio]
 
-
-
 //Função criada para cacular as derrotas
 function calculatingLMatches(playerLosers){
     let defeats = playerLosers[1] - playerLosers[2] - playerLosers[3]
     playerLosers[4] = defeats 
-    
-    
 }
 
 //laço criado para calcular as derrotas de todos os jogadores
@@ -65,9 +61,8 @@ let playerR = ""
  
 function calculatingRanking(minimumWins, maximumwins, n){
     if((playerR[5] >= minimumWins) && (playerR[5] <= maximumwins)){
-        playerR[6] = ranking[n]}
-    
-
+        playerR[6] = ranking[n]
+    }
 }
 
 //O laço abaixo verifiva as vitórias e 

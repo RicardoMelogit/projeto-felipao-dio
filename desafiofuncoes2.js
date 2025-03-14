@@ -15,10 +15,6 @@ let classification = "classification"
 let losses = "losses"
 let wL = "wL"
 
-
-
-
-
 // Variáveis criadas para armazenar as informações dos players.
 let ricardo = ["Ricardo", 1357, 1000,  51, losses, wL, classification]
 let leandro = ["Leandro",  200,   35, 130, losses, wL, classification]
@@ -54,6 +50,7 @@ function calculatingTitle(minimumWins, maximumwins, n){
     }
 }
 
+//Aqui são unidas todas as funções em uma unica funçao
 function main() {
     //Abaixo é utilizado um laço de repetição 
     // aplicando toas as funções em cada player
@@ -71,10 +68,8 @@ function main() {
     }
 }
 
-
-
 //Aqui se digita o nome do player e as informações são, mostradas
-let rankingOfPlayer = mariana
+let rankingOfPlayer = ricardo
 
 console.log("Player " + rankingOfPlayer[0] 
     + " has a balance of, \n" + rankingOfPlayer[5] + 
