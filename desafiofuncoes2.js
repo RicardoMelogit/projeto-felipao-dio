@@ -18,6 +18,7 @@ let wL = "wL"
 
 
 
+
 // Variáveis criadas para armazenar as informações dos players.
 let ricardo = ["Ricardo", 1357, 1000,  51, losses, wL, classification]
 let leandro = ["Leandro",  200,   35, 130, losses, wL, classification]
@@ -35,31 +36,28 @@ let allPlayers = [ricardo, leandro, mariana, paulo, aline, felipe, thalita, juli
 // o numero de derrotas e tb o de vitórias menos derrotas.
 let playerR = ""
 
+main(allPlayers);
+
 function calculatingMatchesL(playerR){
     playerR[4] = playerR[1] - playerR[2] - playerR[3]
-    losses = playerR[4]
-    return playerR
-    
+    losses = playerR[4]    
 }
-
 
 function calculatingWL(playerR){
     playerR[5] = playerR[2] - playerR[4]
       wL = playerR[5]
-    return playerR 
 }
-
 
 function calculatingTitle(minimumWins, maximumwins, n){
     if((playerR[5] >= minimumWins) && (playerR[5] <= maximumwins)){
         playerR[6] = title[n]
     }
-    
 }
 
-//Abaixo é utilizado um laço de repetição 
-// aplicando toas as funções em cada player
-for(let i = 0; i < allPlayers.length; i++){
+function main() {
+    //Abaixo é utilizado um laço de repetição 
+    // aplicando toas as funções em cada player
+    for(let i = 0; i < allPlayers.length; i++){
         playerR = allPlayers[i]
         calculatingMatchesL(playerR)
         calculatingWL(playerR)
@@ -70,13 +68,13 @@ for(let i = 0; i < allPlayers.length; i++){
         calculatingTitle(81, 90, 4)
         calculatingTitle(91, 100, 5)
         calculatingTitle(101, 1000000,6)
-        
-
+    }
 }
 
-//Aqui se digita o nome do player e as informações são, mostradas
-let rankingOfPlayer = ricardo
 
+
+//Aqui se digita o nome do player e as informações são, mostradas
+let rankingOfPlayer = mariana
 
 console.log("Player " + rankingOfPlayer[0] 
     + " has a balance of, \n" + rankingOfPlayer[5] + 
