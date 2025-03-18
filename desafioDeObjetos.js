@@ -57,7 +57,7 @@ const tipo = "guerreiro"
 
 //criando o heroi
 let heroi = new heroiDeAventura(nome, idade, tipo,"")
-//aplicando as funções
+
 //usando a função
 heroi.tipoDeAtaque()
 
