@@ -26,14 +26,15 @@
 
 //criando uma classe
 class heroiDeAventura{
-  constructor(nome, idade, tipo, ataque){
+  constructor(nome, idade, tipo){
       this.nome = nome
       this.idade = idade
       this.tipo = tipo
-      this.ataque = ataque
   }
+
   //Identificando o ataque de acordo com o tipo
   tipoDeAtaque(){
+    let ataque = ""
     if(this.tipo == 'guerreiro'){
       ataque = 'espada'
     }else if(this.tipo == 'mago'){
@@ -41,28 +42,24 @@ class heroiDeAventura{
     }else if(this.tipo == 'monge'){
       ataque = 'artes marciais'
     }else if(this.tipo == 'ninja'){
-      ataque = 'shuriken'
-    }
-    return ataque
-  }
-  //criando a saída com a mensagem
-  atacar(){
-    console.log(`O ${this.tipo} atacou usando ${ataque}`)
-  }
+      ataque = 'shuriken'}
 
+    console.log(`O ${this.tipo} atacou usando ${ataque}`)
+    }
 }
+    
+
 
 //Criando variáveis de entrada de dados
 const nome = "Ricardo"
 const idade = 40
-const tipo = "ninja" 
+const tipo = "guerreiro" 
 
 //criando o heroi
 let heroi = new heroiDeAventura(nome, idade, tipo,"")
-//variavélcriada para guardar o ataque NÃO DEVE SER PREENCHIDA.
-let ataque = ""
 //aplicando as funções
+//usando a função
 heroi.tipoDeAtaque()
-heroi.atacar()
+
 
 
