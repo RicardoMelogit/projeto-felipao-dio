@@ -87,6 +87,8 @@ console.log("Player " + rankingOfPlayer[0]
 + " has a balance of, \n" + rankingOfPlayer[5] + 
 " wins/losses and  is at the level  " + rankingOfPlayer[6])
 
+//teste
+
 
 
 
